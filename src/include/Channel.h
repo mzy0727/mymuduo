@@ -65,6 +65,9 @@ public:
     // 从事件循环中移除
     void remove();
 
+    int index() const { return index_; }
+    void set_index(int idx) { index_ = idx; }
+
 
 private:
     void update();

@@ -29,6 +29,7 @@
         char buf[1024] = {0};   \
         snprintf(buf, 1024, logmsgFormat, ##__VA_ARGS__); \
         logger.writeLog(std::string(buf)); \
+        exit(1); \
     }while(0)
     
 // 为满足条件mu_debug，定义DEBUG级别的日志输出

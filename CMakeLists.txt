@@ -1,4 +1,4 @@
-cmake_minmum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.10)
 project(learn_muduo)
 
 # 设置C++标准
@@ -12,4 +12,4 @@ include_directories(${PROJECT_SOURCE_DIR}/src/include)
 # src包含框架所以源代码
 add_subdirectory(src)
 
-add_subdirectory(example)
+# add_subdirectory(example)
