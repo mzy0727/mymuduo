@@ -7,7 +7,7 @@
 #define LOG_INFO(logmsgFormat, ...) \
     do{ \
         Logger& logger = Logger::getInstance(); \
-        logger.setLogLevel(Logger::INFO); \
+        logger.setLogLevel(LogLevel::INFO); \
         char buf[1024] = {0};   \
         snprintf(buf, 1024, logmsgFormat, ##__VA_ARGS__); \
         logger.writeLog(std::string(buf)); \
@@ -16,7 +16,7 @@
 #define LOG_ERROR(logmsgFormat, ...) \
     do{ \
         Logger& logger = Logger::getInstance(); \
-        logger.setLogLevel(Logger::ERROR); \
+        logger.setLogLevel(LogLevel::ERROR); \
         char buf[1024] = {0};   \
         snprintf(buf, 1024, logmsgFormat, ##__VA_ARGS__); \
         logger.writeLog(std::string(buf)); \
@@ -25,7 +25,7 @@
 #define LOG_FATAL(logmsgFormat, ...) \
     do{ \
         Logger& logger = Logger::getInstance(); \
-        logger.setLogLevel(Logger::FATAL); \
+        logger.setLogLevel(LogLevel::FATAL); \
         char buf[1024] = {0};   \
         snprintf(buf, 1024, logmsgFormat, ##__VA_ARGS__); \
         logger.writeLog(std::string(buf)); \
@@ -38,7 +38,7 @@
         // 获取日志实例
         Logger& logger = Logger::getInstance(); \
         // 设置日志级别为DEBUG
-        logger.setLogLevel(Logger::DEBUG); \
+        logger.setLogLevel(LogLevel::DEBUG); \
         // 定义一个字符串缓冲区
         char buf[1024] = {0};   \
         // 使用snprintf函数将格式化后的字符串存入缓冲区

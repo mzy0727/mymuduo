@@ -43,6 +43,12 @@
         "sstream": "cpp",
         "stdexcept": "cpp",
         "streambuf": "cpp",
-        "typeinfo": "cpp"
-    }
+        "typeinfo": "cpp",
+        "cstring": "cpp",
+        "ctime": "cpp"
+    },
+    "Codegeex.GenerationPreference": "line by line",
+    "Codegeex.SidebarUI.LanguagePreference": "中文",
+    "Codegeex.Comment.LanguagePreference": "中文",
+    "Codegeex.Chat.LanguagePreference": "中文"
 }
