@@ -3,13 +3,18 @@
 
 src/CMakeFiles/mymuduo.dir/Channel.cc.o
  ../src/include/Channel.h
+ ../src/include/CurrentThread.h
  ../src/include/EventLoop.h
  ../src/include/Logger.h
  ../src/include/Timestamp.h
  ../src/include/noncopyable.h
  /home/mzy/Code/mymoduo/src/Channel.cc
+src/CMakeFiles/mymuduo.dir/CurrentThread.cc.o
+ ../src/include/CurrentThread.h
+ /home/mzy/Code/mymoduo/src/CurrentThread.cc
 src/CMakeFiles/mymuduo.dir/EPollPoller.cc.o
  ../src/include/Channel.h
+ ../src/include/CurrentThread.h
  ../src/include/EPollPoller.h
  ../src/include/EventLoop.h
  ../src/include/Logger.h
@@ -18,6 +23,14 @@ src/CMakeFiles/mymuduo.dir/EPollPoller.cc.o
  ../src/include/noncopyable.h
  /home/mzy/Code/mymoduo/src/EPollPoller.cc
 src/CMakeFiles/mymuduo.dir/EventLoop.cc.o
+ ../src/include/Channel.h
+ ../src/include/CurrentThread.h
+ ../src/include/EPollPoller.h
+ ../src/include/EventLoop.h
+ ../src/include/Logger.h
+ ../src/include/Poller.h
+ ../src/include/Timestamp.h
+ ../src/include/noncopyable.h
  /home/mzy/Code/mymoduo/src/EventLoop.cc
 src/CMakeFiles/mymuduo.dir/InetAddress.cc.o
  ../src/include/InetAddress.h
@@ -29,6 +42,7 @@ src/CMakeFiles/mymuduo.dir/Logger.cc.o
  /home/mzy/Code/mymoduo/src/Logger.cc
 src/CMakeFiles/mymuduo.dir/Poller.cc.o
  ../src/include/Channel.h
+ ../src/include/CurrentThread.h
  ../src/include/EventLoop.h
  ../src/include/Poller.h
  ../src/include/Timestamp.h

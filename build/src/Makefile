@@ -152,6 +152,33 @@ Channel.cc.s:
 	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Channel.cc.s
 .PHONY : Channel.cc.s
 
+CurrentThread.o: CurrentThread.cc.o
+
+.PHONY : CurrentThread.o
+
+# target to build an object file
+CurrentThread.cc.o:
+	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/CurrentThread.cc.o
+.PHONY : CurrentThread.cc.o
+
+CurrentThread.i: CurrentThread.cc.i
+
+.PHONY : CurrentThread.i
+
+# target to preprocess a source file
+CurrentThread.cc.i:
+	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/CurrentThread.cc.i
+.PHONY : CurrentThread.cc.i
+
+CurrentThread.s: CurrentThread.cc.s
+
+.PHONY : CurrentThread.s
+
+# target to generate assembly for a file
+CurrentThread.cc.s:
+	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/CurrentThread.cc.s
+.PHONY : CurrentThread.cc.s
+
 EPollPoller.o: EPollPoller.cc.o
 
 .PHONY : EPollPoller.o
@@ -353,6 +380,9 @@ help:
 	@echo "... Channel.o"
 	@echo "... Channel.i"
 	@echo "... Channel.s"
+	@echo "... CurrentThread.o"
+	@echo "... CurrentThread.i"
+	@echo "... CurrentThread.s"
 	@echo "... EPollPoller.o"
 	@echo "... EPollPoller.i"
 	@echo "... EPollPoller.s"
