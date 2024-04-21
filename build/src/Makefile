@@ -233,6 +233,60 @@ EventLoop.cc.s:
 	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoop.cc.s
 .PHONY : EventLoop.cc.s
 
+EventLoopThread.o: EventLoopThread.cc.o
+
+.PHONY : EventLoopThread.o
+
+# target to build an object file
+EventLoopThread.cc.o:
+	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoopThread.cc.o
+.PHONY : EventLoopThread.cc.o
+
+EventLoopThread.i: EventLoopThread.cc.i
+
+.PHONY : EventLoopThread.i
+
+# target to preprocess a source file
+EventLoopThread.cc.i:
+	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoopThread.cc.i
+.PHONY : EventLoopThread.cc.i
+
+EventLoopThread.s: EventLoopThread.cc.s
+
+.PHONY : EventLoopThread.s
+
+# target to generate assembly for a file
+EventLoopThread.cc.s:
+	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoopThread.cc.s
+.PHONY : EventLoopThread.cc.s
+
+EventLoopThreadPool.o: EventLoopThreadPool.cc.o
+
+.PHONY : EventLoopThreadPool.o
+
+# target to build an object file
+EventLoopThreadPool.cc.o:
+	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.o
+.PHONY : EventLoopThreadPool.cc.o
+
+EventLoopThreadPool.i: EventLoopThreadPool.cc.i
+
+.PHONY : EventLoopThreadPool.i
+
+# target to preprocess a source file
+EventLoopThreadPool.cc.i:
+	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.i
+.PHONY : EventLoopThreadPool.cc.i
+
+EventLoopThreadPool.s: EventLoopThreadPool.cc.s
+
+.PHONY : EventLoopThreadPool.s
+
+# target to generate assembly for a file
+EventLoopThreadPool.cc.s:
+	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.s
+.PHONY : EventLoopThreadPool.cc.s
+
 InetAddress.o: InetAddress.cc.o
 
 .PHONY : InetAddress.o
@@ -314,6 +368,33 @@ Poller.cc.s:
 	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Poller.cc.s
 .PHONY : Poller.cc.s
 
+Socket.o: Socket.cc.o
+
+.PHONY : Socket.o
+
+# target to build an object file
+Socket.cc.o:
+	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Socket.cc.o
+.PHONY : Socket.cc.o
+
+Socket.i: Socket.cc.i
+
+.PHONY : Socket.i
+
+# target to preprocess a source file
+Socket.cc.i:
+	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Socket.cc.i
+.PHONY : Socket.cc.i
+
+Socket.s: Socket.cc.s
+
+.PHONY : Socket.s
+
+# target to generate assembly for a file
+Socket.cc.s:
+	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Socket.cc.s
+.PHONY : Socket.cc.s
+
 TcpServer.o: TcpServer.cc.o
 
 .PHONY : TcpServer.o
@@ -340,6 +421,33 @@ TcpServer.s: TcpServer.cc.s
 TcpServer.cc.s:
 	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/TcpServer.cc.s
 .PHONY : TcpServer.cc.s
+
+Thread.o: Thread.cc.o
+
+.PHONY : Thread.o
+
+# target to build an object file
+Thread.cc.o:
+	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Thread.cc.o
+.PHONY : Thread.cc.o
+
+Thread.i: Thread.cc.i
+
+.PHONY : Thread.i
+
+# target to preprocess a source file
+Thread.cc.i:
+	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Thread.cc.i
+.PHONY : Thread.cc.i
+
+Thread.s: Thread.cc.s
+
+.PHONY : Thread.s
+
+# target to generate assembly for a file
+Thread.cc.s:
+	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Thread.cc.s
+.PHONY : Thread.cc.s
 
 Timestamp.o: Timestamp.cc.o
 
@@ -389,6 +497,12 @@ help:
 	@echo "... EventLoop.o"
 	@echo "... EventLoop.i"
 	@echo "... EventLoop.s"
+	@echo "... EventLoopThread.o"
+	@echo "... EventLoopThread.i"
+	@echo "... EventLoopThread.s"
+	@echo "... EventLoopThreadPool.o"
+	@echo "... EventLoopThreadPool.i"
+	@echo "... EventLoopThreadPool.s"
 	@echo "... InetAddress.o"
 	@echo "... InetAddress.i"
 	@echo "... InetAddress.s"
@@ -398,9 +512,15 @@ help:
 	@echo "... Poller.o"
 	@echo "... Poller.i"
 	@echo "... Poller.s"
+	@echo "... Socket.o"
+	@echo "... Socket.i"
+	@echo "... Socket.s"
 	@echo "... TcpServer.o"
 	@echo "... TcpServer.i"
 	@echo "... TcpServer.s"
+	@echo "... Thread.o"
+	@echo "... Thread.i"
+	@echo "... Thread.s"
 	@echo "... Timestamp.o"
 	@echo "... Timestamp.i"
 	@echo "... Timestamp.s"

@@ -32,6 +32,23 @@ src/CMakeFiles/mymuduo.dir/EventLoop.cc.o: ../src/include/Timestamp.h
 src/CMakeFiles/mymuduo.dir/EventLoop.cc.o: ../src/include/noncopyable.h
 src/CMakeFiles/mymuduo.dir/EventLoop.cc.o: ../src/EventLoop.cc
 
+src/CMakeFiles/mymuduo.dir/EventLoopThread.cc.o: ../src/include/CurrentThread.h
+src/CMakeFiles/mymuduo.dir/EventLoopThread.cc.o: ../src/include/EventLoop.h
+src/CMakeFiles/mymuduo.dir/EventLoopThread.cc.o: ../src/include/EventLoopThread.h
+src/CMakeFiles/mymuduo.dir/EventLoopThread.cc.o: ../src/include/Thread.h
+src/CMakeFiles/mymuduo.dir/EventLoopThread.cc.o: ../src/include/Timestamp.h
+src/CMakeFiles/mymuduo.dir/EventLoopThread.cc.o: ../src/include/noncopyable.h
+src/CMakeFiles/mymuduo.dir/EventLoopThread.cc.o: ../src/EventLoopThread.cc
+
+src/CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.o: ../src/include/CurrentThread.h
+src/CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.o: ../src/include/EventLoop.h
+src/CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.o: ../src/include/EventLoopThread.h
+src/CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.o: ../src/include/EventLoopThreadPool.h
+src/CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.o: ../src/include/Thread.h
+src/CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.o: ../src/include/Timestamp.h
+src/CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.o: ../src/include/noncopyable.h
+src/CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.o: ../src/EventLoopThreadPool.cc
+
 src/CMakeFiles/mymuduo.dir/InetAddress.cc.o: ../src/include/InetAddress.h
 src/CMakeFiles/mymuduo.dir/InetAddress.cc.o: ../src/InetAddress.cc
 
@@ -48,7 +65,18 @@ src/CMakeFiles/mymuduo.dir/Poller.cc.o: ../src/include/Timestamp.h
 src/CMakeFiles/mymuduo.dir/Poller.cc.o: ../src/include/noncopyable.h
 src/CMakeFiles/mymuduo.dir/Poller.cc.o: ../src/Poller.cc
 
+src/CMakeFiles/mymuduo.dir/Socket.cc.o: ../src/include/InetAddress.h
+src/CMakeFiles/mymuduo.dir/Socket.cc.o: ../src/include/Logger.h
+src/CMakeFiles/mymuduo.dir/Socket.cc.o: ../src/include/Socket.h
+src/CMakeFiles/mymuduo.dir/Socket.cc.o: ../src/include/noncopyable.h
+src/CMakeFiles/mymuduo.dir/Socket.cc.o: ../src/Socket.cc
+
 src/CMakeFiles/mymuduo.dir/TcpServer.cc.o: ../src/TcpServer.cc
+
+src/CMakeFiles/mymuduo.dir/Thread.cc.o: ../src/include/CurrentThread.h
+src/CMakeFiles/mymuduo.dir/Thread.cc.o: ../src/include/Thread.h
+src/CMakeFiles/mymuduo.dir/Thread.cc.o: ../src/include/noncopyable.h
+src/CMakeFiles/mymuduo.dir/Thread.cc.o: ../src/Thread.cc
 
 src/CMakeFiles/mymuduo.dir/Timestamp.cc.o: ../src/include/Timestamp.h
 src/CMakeFiles/mymuduo.dir/Timestamp.cc.o: ../src/Timestamp.cc
