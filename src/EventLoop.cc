@@ -19,7 +19,7 @@ int createEventfd(){
     int evtfd = eventfd(0, EFD_NONBLOCK | EFD_CLOEXEC);
     if(evtfd < 0){
         // 创建失败
-        LOG_FATAL("File: %s, Function: %s, Line: %d, eventfd error: %d\n"__FILE__, __func__, __LINE__,errno);
+        LOG_FATAL("File: %s, Function: %s, Line: %d, eventfd error: %d\n",__FILE__, __func__, __LINE__,errno);
     }
     return evtfd;
 }

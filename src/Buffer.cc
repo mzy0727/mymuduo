@@ -35,9 +35,11 @@ ssize_t Buffer::readFd(int fd, int* savedErrno){
 
 }
 ssize_t Buffer::writeFd(int fd, int* savedErrno){
+    // 尝试将可读取的字节从文件描述符写入缓冲区
     ssize_t n = ::write(fd, peek(), readableBytes());
     if (n < 0)
     {
+        // 记录错误号
         *savedErrno = errno;
     }
     return n;

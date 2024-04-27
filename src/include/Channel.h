@@ -33,6 +33,7 @@ public:
         // 将传入的回调函数移动到成员变量
         closeCallback_ = std::move(cb);
     }
+    void setErrorCallback(EventCallback cb) { errorCallback_ = std::move(cb); }
 
     // 1. tie：
     // 将一个共享指针与事件循环关联

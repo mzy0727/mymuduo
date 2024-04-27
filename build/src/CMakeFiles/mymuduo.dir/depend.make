@@ -79,12 +79,26 @@ src/CMakeFiles/mymuduo.dir/Poller.cc.o: ../src/include/Timestamp.h
 src/CMakeFiles/mymuduo.dir/Poller.cc.o: ../src/include/noncopyable.h
 src/CMakeFiles/mymuduo.dir/Poller.cc.o: ../src/Poller.cc
 
+src/CMakeFiles/mymuduo.dir/Socket.cc.o: ../src/include/CurrentThread.h
+src/CMakeFiles/mymuduo.dir/Socket.cc.o: ../src/include/EventLoop.h
 src/CMakeFiles/mymuduo.dir/Socket.cc.o: ../src/include/InetAddress.h
 src/CMakeFiles/mymuduo.dir/Socket.cc.o: ../src/include/Logger.h
 src/CMakeFiles/mymuduo.dir/Socket.cc.o: ../src/include/Socket.h
+src/CMakeFiles/mymuduo.dir/Socket.cc.o: ../src/include/Timestamp.h
 src/CMakeFiles/mymuduo.dir/Socket.cc.o: ../src/include/noncopyable.h
 src/CMakeFiles/mymuduo.dir/Socket.cc.o: ../src/Socket.cc
 
+src/CMakeFiles/mymuduo.dir/TcpConnection.cc.o: ../src/include/Buffer.h
+src/CMakeFiles/mymuduo.dir/TcpConnection.cc.o: ../src/include/Callbacks.h
+src/CMakeFiles/mymuduo.dir/TcpConnection.cc.o: ../src/include/Channel.h
+src/CMakeFiles/mymuduo.dir/TcpConnection.cc.o: ../src/include/CurrentThread.h
+src/CMakeFiles/mymuduo.dir/TcpConnection.cc.o: ../src/include/EventLoop.h
+src/CMakeFiles/mymuduo.dir/TcpConnection.cc.o: ../src/include/InetAddress.h
+src/CMakeFiles/mymuduo.dir/TcpConnection.cc.o: ../src/include/Logger.h
+src/CMakeFiles/mymuduo.dir/TcpConnection.cc.o: ../src/include/Socket.h
+src/CMakeFiles/mymuduo.dir/TcpConnection.cc.o: ../src/include/TcpConnection.h
+src/CMakeFiles/mymuduo.dir/TcpConnection.cc.o: ../src/include/Timestamp.h
+src/CMakeFiles/mymuduo.dir/TcpConnection.cc.o: ../src/include/noncopyable.h
 src/CMakeFiles/mymuduo.dir/TcpConnection.cc.o: ../src/TcpConnection.cc
 
 src/CMakeFiles/mymuduo.dir/TcpServer.cc.o: ../src/include/Acceptor.h

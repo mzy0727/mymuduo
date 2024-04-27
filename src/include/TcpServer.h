@@ -71,7 +71,7 @@ private:
 
 
     // 当前服务器运行的事件循环
-    using ConnectionMap = std::unordered_map<int, std::shared_ptr<TcpConnection>>;
+    using ConnectionMap = std::unordered_map<std::string, std::shared_ptr<TcpConnection>>;
 
     EventLoop* loop_;
     // 表示当前服务器的ip和端口

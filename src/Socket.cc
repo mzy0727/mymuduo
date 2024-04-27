@@ -8,6 +8,10 @@
 #include<unistd.h>
 #include<strings.h>
 
+#include"EventLoop.h"
+
+extern EventLoop* CheckLoopNotNull(EventLoop* loop);
+
 
 Socket::~Socket(){
     ::close(sockfd_);
