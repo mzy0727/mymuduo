@@ -233,6 +233,33 @@ CurrentThread.cc.s:
 	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/CurrentThread.cc.s
 .PHONY : CurrentThread.cc.s
 
+DefaultPoller.o: DefaultPoller.cc.o
+
+.PHONY : DefaultPoller.o
+
+# target to build an object file
+DefaultPoller.cc.o:
+	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/DefaultPoller.cc.o
+.PHONY : DefaultPoller.cc.o
+
+DefaultPoller.i: DefaultPoller.cc.i
+
+.PHONY : DefaultPoller.i
+
+# target to preprocess a source file
+DefaultPoller.cc.i:
+	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/DefaultPoller.cc.i
+.PHONY : DefaultPoller.cc.i
+
+DefaultPoller.s: DefaultPoller.cc.s
+
+.PHONY : DefaultPoller.s
+
+# target to generate assembly for a file
+DefaultPoller.cc.s:
+	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/DefaultPoller.cc.s
+.PHONY : DefaultPoller.cc.s
+
 EPollPoller.o: EPollPoller.cc.o
 
 .PHONY : EPollPoller.o
@@ -578,6 +605,9 @@ help:
 	@echo "... CurrentThread.o"
 	@echo "... CurrentThread.i"
 	@echo "... CurrentThread.s"
+	@echo "... DefaultPoller.o"
+	@echo "... DefaultPoller.i"
+	@echo "... DefaultPoller.s"
 	@echo "... EPollPoller.o"
 	@echo "... EPollPoller.i"
 	@echo "... EPollPoller.s"

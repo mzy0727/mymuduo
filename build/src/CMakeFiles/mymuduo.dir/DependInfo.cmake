@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mzy/Code/mymoduo/src/Buffer.cc" "/home/mzy/Code/mymoduo/build/src/CMakeFiles/mymuduo.dir/Buffer.cc.o"
   "/home/mzy/Code/mymoduo/src/Channel.cc" "/home/mzy/Code/mymoduo/build/src/CMakeFiles/mymuduo.dir/Channel.cc.o"
   "/home/mzy/Code/mymoduo/src/CurrentThread.cc" "/home/mzy/Code/mymoduo/build/src/CMakeFiles/mymuduo.dir/CurrentThread.cc.o"
+  "/home/mzy/Code/mymoduo/src/DefaultPoller.cc" "/home/mzy/Code/mymoduo/build/src/CMakeFiles/mymuduo.dir/DefaultPoller.cc.o"
   "/home/mzy/Code/mymoduo/src/EPollPoller.cc" "/home/mzy/Code/mymoduo/build/src/CMakeFiles/mymuduo.dir/EPollPoller.cc.o"
   "/home/mzy/Code/mymoduo/src/EventLoop.cc" "/home/mzy/Code/mymoduo/build/src/CMakeFiles/mymuduo.dir/EventLoop.cc.o"
   "/home/mzy/Code/mymoduo/src/EventLoopThread.cc" "/home/mzy/Code/mymoduo/build/src/CMakeFiles/mymuduo.dir/EventLoopThread.cc.o"
@@ -30,7 +31,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../src/include"
+  "../include"
   )
 
 # Targets to which this target links.
