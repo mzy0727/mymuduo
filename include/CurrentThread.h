@@ -2,10 +2,15 @@
 
 #include <unistd.h>
 #include <sys/syscall.h>
+#include <string.h>
+#include <stdio.h>
 
 namespace CurrentThread
 {
     extern __thread int t_cachedTid;
+    extern __thread char t_tidString[32];
+    extern __thread int t_tidStringLength;
+    extern __thread const char* t_threadName;
 
     void cacheTid();
 
@@ -17,4 +22,23 @@ namespace CurrentThread
         }
         return t_cachedTid;
     }
+    
+    inline const char* tidString() {
+        if (0 == t_cachedTid) {
+            int retid = tid();
+            snprintf(t_tidString, sizeof(t_tidString), "%d", retid);
+            t_tidStringLength = strlen(t_tidString);
+        }
+        return t_tidString;
+    }
+
+    inline int tidStringLength() {
+        if (0 == t_tidStringLength) {
+            tidString();
+        }
+        return t_tidStringLength;
+    }
+
+    inline const char* name() { return t_threadName; }
+   
 }

@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -std=gnu++11
 
 CXX_DEFINES = -Dmymuduo_EXPORTS
 
-CXX_INCLUDES = -I/home/mzy/Code/mymoduo/include 
+CXX_INCLUDES = -I/home/mzy/Code/mymuduo/include 
 

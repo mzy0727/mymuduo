@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mzy/Code/mymoduo
+CMAKE_SOURCE_DIR = /home/mzy/Code/mymuduo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mzy/Code/mymoduo/build
+CMAKE_BINARY_DIR = /home/mzy/Code/mymuduo/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/mzy/Code/mymoduo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mzy/Code/mymoduo/build/CMakeFiles /home/mzy/Code/mymoduo/build/src/CMakeFiles/progress.marks
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mzy/Code/mymoduo/build/CMakeFiles 0
+	cd /home/mzy/Code/mymuduo/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mzy/Code/mymuduo/build/CMakeFiles /home/mzy/Code/mymuduo/build/src/CMakeFiles/progress.marks
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mzy/Code/mymuduo/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/mzy/Code/mymoduo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mzy/Code/mymuduo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/mymuduo.dir/rule:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/mymuduo.dir/rule
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/mymuduo.dir/rule
 .PHONY : src/CMakeFiles/mymuduo.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ mymuduo: src/CMakeFiles/mymuduo.dir/rule
 
 # fast build rule for target.
 mymuduo/fast:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/build
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/build
 .PHONY : mymuduo/fast
 
 Acceptor.o: Acceptor.cc.o
@@ -131,7 +131,7 @@ Acceptor.o: Acceptor.cc.o
 
 # target to build an object file
 Acceptor.cc.o:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Acceptor.cc.o
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Acceptor.cc.o
 .PHONY : Acceptor.cc.o
 
 Acceptor.i: Acceptor.cc.i
@@ -140,7 +140,7 @@ Acceptor.i: Acceptor.cc.i
 
 # target to preprocess a source file
 Acceptor.cc.i:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Acceptor.cc.i
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Acceptor.cc.i
 .PHONY : Acceptor.cc.i
 
 Acceptor.s: Acceptor.cc.s
@@ -149,8 +149,35 @@ Acceptor.s: Acceptor.cc.s
 
 # target to generate assembly for a file
 Acceptor.cc.s:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Acceptor.cc.s
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Acceptor.cc.s
 .PHONY : Acceptor.cc.s
+
+AsyncLogging.o: AsyncLogging.cc.o
+
+.PHONY : AsyncLogging.o
+
+# target to build an object file
+AsyncLogging.cc.o:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/AsyncLogging.cc.o
+.PHONY : AsyncLogging.cc.o
+
+AsyncLogging.i: AsyncLogging.cc.i
+
+.PHONY : AsyncLogging.i
+
+# target to preprocess a source file
+AsyncLogging.cc.i:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/AsyncLogging.cc.i
+.PHONY : AsyncLogging.cc.i
+
+AsyncLogging.s: AsyncLogging.cc.s
+
+.PHONY : AsyncLogging.s
+
+# target to generate assembly for a file
+AsyncLogging.cc.s:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/AsyncLogging.cc.s
+.PHONY : AsyncLogging.cc.s
 
 Buffer.o: Buffer.cc.o
 
@@ -158,7 +185,7 @@ Buffer.o: Buffer.cc.o
 
 # target to build an object file
 Buffer.cc.o:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Buffer.cc.o
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Buffer.cc.o
 .PHONY : Buffer.cc.o
 
 Buffer.i: Buffer.cc.i
@@ -167,7 +194,7 @@ Buffer.i: Buffer.cc.i
 
 # target to preprocess a source file
 Buffer.cc.i:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Buffer.cc.i
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Buffer.cc.i
 .PHONY : Buffer.cc.i
 
 Buffer.s: Buffer.cc.s
@@ -176,7 +203,7 @@ Buffer.s: Buffer.cc.s
 
 # target to generate assembly for a file
 Buffer.cc.s:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Buffer.cc.s
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Buffer.cc.s
 .PHONY : Buffer.cc.s
 
 Channel.o: Channel.cc.o
@@ -185,7 +212,7 @@ Channel.o: Channel.cc.o
 
 # target to build an object file
 Channel.cc.o:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Channel.cc.o
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Channel.cc.o
 .PHONY : Channel.cc.o
 
 Channel.i: Channel.cc.i
@@ -194,7 +221,7 @@ Channel.i: Channel.cc.i
 
 # target to preprocess a source file
 Channel.cc.i:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Channel.cc.i
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Channel.cc.i
 .PHONY : Channel.cc.i
 
 Channel.s: Channel.cc.s
@@ -203,7 +230,7 @@ Channel.s: Channel.cc.s
 
 # target to generate assembly for a file
 Channel.cc.s:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Channel.cc.s
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Channel.cc.s
 .PHONY : Channel.cc.s
 
 CurrentThread.o: CurrentThread.cc.o
@@ -212,7 +239,7 @@ CurrentThread.o: CurrentThread.cc.o
 
 # target to build an object file
 CurrentThread.cc.o:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/CurrentThread.cc.o
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/CurrentThread.cc.o
 .PHONY : CurrentThread.cc.o
 
 CurrentThread.i: CurrentThread.cc.i
@@ -221,7 +248,7 @@ CurrentThread.i: CurrentThread.cc.i
 
 # target to preprocess a source file
 CurrentThread.cc.i:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/CurrentThread.cc.i
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/CurrentThread.cc.i
 .PHONY : CurrentThread.cc.i
 
 CurrentThread.s: CurrentThread.cc.s
@@ -230,8 +257,35 @@ CurrentThread.s: CurrentThread.cc.s
 
 # target to generate assembly for a file
 CurrentThread.cc.s:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/CurrentThread.cc.s
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/CurrentThread.cc.s
 .PHONY : CurrentThread.cc.s
+
+Date.o: Date.cc.o
+
+.PHONY : Date.o
+
+# target to build an object file
+Date.cc.o:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Date.cc.o
+.PHONY : Date.cc.o
+
+Date.i: Date.cc.i
+
+.PHONY : Date.i
+
+# target to preprocess a source file
+Date.cc.i:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Date.cc.i
+.PHONY : Date.cc.i
+
+Date.s: Date.cc.s
+
+.PHONY : Date.s
+
+# target to generate assembly for a file
+Date.cc.s:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Date.cc.s
+.PHONY : Date.cc.s
 
 DefaultPoller.o: DefaultPoller.cc.o
 
@@ -239,7 +293,7 @@ DefaultPoller.o: DefaultPoller.cc.o
 
 # target to build an object file
 DefaultPoller.cc.o:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/DefaultPoller.cc.o
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/DefaultPoller.cc.o
 .PHONY : DefaultPoller.cc.o
 
 DefaultPoller.i: DefaultPoller.cc.i
@@ -248,7 +302,7 @@ DefaultPoller.i: DefaultPoller.cc.i
 
 # target to preprocess a source file
 DefaultPoller.cc.i:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/DefaultPoller.cc.i
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/DefaultPoller.cc.i
 .PHONY : DefaultPoller.cc.i
 
 DefaultPoller.s: DefaultPoller.cc.s
@@ -257,7 +311,7 @@ DefaultPoller.s: DefaultPoller.cc.s
 
 # target to generate assembly for a file
 DefaultPoller.cc.s:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/DefaultPoller.cc.s
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/DefaultPoller.cc.s
 .PHONY : DefaultPoller.cc.s
 
 EPollPoller.o: EPollPoller.cc.o
@@ -266,7 +320,7 @@ EPollPoller.o: EPollPoller.cc.o
 
 # target to build an object file
 EPollPoller.cc.o:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EPollPoller.cc.o
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EPollPoller.cc.o
 .PHONY : EPollPoller.cc.o
 
 EPollPoller.i: EPollPoller.cc.i
@@ -275,7 +329,7 @@ EPollPoller.i: EPollPoller.cc.i
 
 # target to preprocess a source file
 EPollPoller.cc.i:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EPollPoller.cc.i
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EPollPoller.cc.i
 .PHONY : EPollPoller.cc.i
 
 EPollPoller.s: EPollPoller.cc.s
@@ -284,7 +338,7 @@ EPollPoller.s: EPollPoller.cc.s
 
 # target to generate assembly for a file
 EPollPoller.cc.s:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EPollPoller.cc.s
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EPollPoller.cc.s
 .PHONY : EPollPoller.cc.s
 
 EventLoop.o: EventLoop.cc.o
@@ -293,7 +347,7 @@ EventLoop.o: EventLoop.cc.o
 
 # target to build an object file
 EventLoop.cc.o:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoop.cc.o
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoop.cc.o
 .PHONY : EventLoop.cc.o
 
 EventLoop.i: EventLoop.cc.i
@@ -302,7 +356,7 @@ EventLoop.i: EventLoop.cc.i
 
 # target to preprocess a source file
 EventLoop.cc.i:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoop.cc.i
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoop.cc.i
 .PHONY : EventLoop.cc.i
 
 EventLoop.s: EventLoop.cc.s
@@ -311,7 +365,7 @@ EventLoop.s: EventLoop.cc.s
 
 # target to generate assembly for a file
 EventLoop.cc.s:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoop.cc.s
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoop.cc.s
 .PHONY : EventLoop.cc.s
 
 EventLoopThread.o: EventLoopThread.cc.o
@@ -320,7 +374,7 @@ EventLoopThread.o: EventLoopThread.cc.o
 
 # target to build an object file
 EventLoopThread.cc.o:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoopThread.cc.o
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoopThread.cc.o
 .PHONY : EventLoopThread.cc.o
 
 EventLoopThread.i: EventLoopThread.cc.i
@@ -329,7 +383,7 @@ EventLoopThread.i: EventLoopThread.cc.i
 
 # target to preprocess a source file
 EventLoopThread.cc.i:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoopThread.cc.i
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoopThread.cc.i
 .PHONY : EventLoopThread.cc.i
 
 EventLoopThread.s: EventLoopThread.cc.s
@@ -338,7 +392,7 @@ EventLoopThread.s: EventLoopThread.cc.s
 
 # target to generate assembly for a file
 EventLoopThread.cc.s:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoopThread.cc.s
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoopThread.cc.s
 .PHONY : EventLoopThread.cc.s
 
 EventLoopThreadPool.o: EventLoopThreadPool.cc.o
@@ -347,7 +401,7 @@ EventLoopThreadPool.o: EventLoopThreadPool.cc.o
 
 # target to build an object file
 EventLoopThreadPool.cc.o:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.o
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.o
 .PHONY : EventLoopThreadPool.cc.o
 
 EventLoopThreadPool.i: EventLoopThreadPool.cc.i
@@ -356,7 +410,7 @@ EventLoopThreadPool.i: EventLoopThreadPool.cc.i
 
 # target to preprocess a source file
 EventLoopThreadPool.cc.i:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.i
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.i
 .PHONY : EventLoopThreadPool.cc.i
 
 EventLoopThreadPool.s: EventLoopThreadPool.cc.s
@@ -365,8 +419,35 @@ EventLoopThreadPool.s: EventLoopThreadPool.cc.s
 
 # target to generate assembly for a file
 EventLoopThreadPool.cc.s:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.s
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.s
 .PHONY : EventLoopThreadPool.cc.s
+
+FileUtils.o: FileUtils.cc.o
+
+.PHONY : FileUtils.o
+
+# target to build an object file
+FileUtils.cc.o:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/FileUtils.cc.o
+.PHONY : FileUtils.cc.o
+
+FileUtils.i: FileUtils.cc.i
+
+.PHONY : FileUtils.i
+
+# target to preprocess a source file
+FileUtils.cc.i:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/FileUtils.cc.i
+.PHONY : FileUtils.cc.i
+
+FileUtils.s: FileUtils.cc.s
+
+.PHONY : FileUtils.s
+
+# target to generate assembly for a file
+FileUtils.cc.s:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/FileUtils.cc.s
+.PHONY : FileUtils.cc.s
 
 InetAddress.o: InetAddress.cc.o
 
@@ -374,7 +455,7 @@ InetAddress.o: InetAddress.cc.o
 
 # target to build an object file
 InetAddress.cc.o:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/InetAddress.cc.o
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/InetAddress.cc.o
 .PHONY : InetAddress.cc.o
 
 InetAddress.i: InetAddress.cc.i
@@ -383,7 +464,7 @@ InetAddress.i: InetAddress.cc.i
 
 # target to preprocess a source file
 InetAddress.cc.i:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/InetAddress.cc.i
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/InetAddress.cc.i
 .PHONY : InetAddress.cc.i
 
 InetAddress.s: InetAddress.cc.s
@@ -392,8 +473,62 @@ InetAddress.s: InetAddress.cc.s
 
 # target to generate assembly for a file
 InetAddress.cc.s:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/InetAddress.cc.s
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/InetAddress.cc.s
 .PHONY : InetAddress.cc.s
+
+LogFile.o: LogFile.cc.o
+
+.PHONY : LogFile.o
+
+# target to build an object file
+LogFile.cc.o:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/LogFile.cc.o
+.PHONY : LogFile.cc.o
+
+LogFile.i: LogFile.cc.i
+
+.PHONY : LogFile.i
+
+# target to preprocess a source file
+LogFile.cc.i:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/LogFile.cc.i
+.PHONY : LogFile.cc.i
+
+LogFile.s: LogFile.cc.s
+
+.PHONY : LogFile.s
+
+# target to generate assembly for a file
+LogFile.cc.s:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/LogFile.cc.s
+.PHONY : LogFile.cc.s
+
+LogStream.o: LogStream.cc.o
+
+.PHONY : LogStream.o
+
+# target to build an object file
+LogStream.cc.o:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/LogStream.cc.o
+.PHONY : LogStream.cc.o
+
+LogStream.i: LogStream.cc.i
+
+.PHONY : LogStream.i
+
+# target to preprocess a source file
+LogStream.cc.i:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/LogStream.cc.i
+.PHONY : LogStream.cc.i
+
+LogStream.s: LogStream.cc.s
+
+.PHONY : LogStream.s
+
+# target to generate assembly for a file
+LogStream.cc.s:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/LogStream.cc.s
+.PHONY : LogStream.cc.s
 
 Logger.o: Logger.cc.o
 
@@ -401,7 +536,7 @@ Logger.o: Logger.cc.o
 
 # target to build an object file
 Logger.cc.o:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Logger.cc.o
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Logger.cc.o
 .PHONY : Logger.cc.o
 
 Logger.i: Logger.cc.i
@@ -410,7 +545,7 @@ Logger.i: Logger.cc.i
 
 # target to preprocess a source file
 Logger.cc.i:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Logger.cc.i
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Logger.cc.i
 .PHONY : Logger.cc.i
 
 Logger.s: Logger.cc.s
@@ -419,8 +554,62 @@ Logger.s: Logger.cc.s
 
 # target to generate assembly for a file
 Logger.cc.s:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Logger.cc.s
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Logger.cc.s
 .PHONY : Logger.cc.s
+
+Logging.o: Logging.cc.o
+
+.PHONY : Logging.o
+
+# target to build an object file
+Logging.cc.o:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Logging.cc.o
+.PHONY : Logging.cc.o
+
+Logging.i: Logging.cc.i
+
+.PHONY : Logging.i
+
+# target to preprocess a source file
+Logging.cc.i:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Logging.cc.i
+.PHONY : Logging.cc.i
+
+Logging.s: Logging.cc.s
+
+.PHONY : Logging.s
+
+# target to generate assembly for a file
+Logging.cc.s:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Logging.cc.s
+.PHONY : Logging.cc.s
+
+MuduoThread.o: MuduoThread.cc.o
+
+.PHONY : MuduoThread.o
+
+# target to build an object file
+MuduoThread.cc.o:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/MuduoThread.cc.o
+.PHONY : MuduoThread.cc.o
+
+MuduoThread.i: MuduoThread.cc.i
+
+.PHONY : MuduoThread.i
+
+# target to preprocess a source file
+MuduoThread.cc.i:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/MuduoThread.cc.i
+.PHONY : MuduoThread.cc.i
+
+MuduoThread.s: MuduoThread.cc.s
+
+.PHONY : MuduoThread.s
+
+# target to generate assembly for a file
+MuduoThread.cc.s:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/MuduoThread.cc.s
+.PHONY : MuduoThread.cc.s
 
 Poller.o: Poller.cc.o
 
@@ -428,7 +617,7 @@ Poller.o: Poller.cc.o
 
 # target to build an object file
 Poller.cc.o:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Poller.cc.o
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Poller.cc.o
 .PHONY : Poller.cc.o
 
 Poller.i: Poller.cc.i
@@ -437,7 +626,7 @@ Poller.i: Poller.cc.i
 
 # target to preprocess a source file
 Poller.cc.i:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Poller.cc.i
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Poller.cc.i
 .PHONY : Poller.cc.i
 
 Poller.s: Poller.cc.s
@@ -446,7 +635,7 @@ Poller.s: Poller.cc.s
 
 # target to generate assembly for a file
 Poller.cc.s:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Poller.cc.s
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Poller.cc.s
 .PHONY : Poller.cc.s
 
 Socket.o: Socket.cc.o
@@ -455,7 +644,7 @@ Socket.o: Socket.cc.o
 
 # target to build an object file
 Socket.cc.o:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Socket.cc.o
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Socket.cc.o
 .PHONY : Socket.cc.o
 
 Socket.i: Socket.cc.i
@@ -464,7 +653,7 @@ Socket.i: Socket.cc.i
 
 # target to preprocess a source file
 Socket.cc.i:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Socket.cc.i
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Socket.cc.i
 .PHONY : Socket.cc.i
 
 Socket.s: Socket.cc.s
@@ -473,7 +662,7 @@ Socket.s: Socket.cc.s
 
 # target to generate assembly for a file
 Socket.cc.s:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Socket.cc.s
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Socket.cc.s
 .PHONY : Socket.cc.s
 
 TcpConnection.o: TcpConnection.cc.o
@@ -482,7 +671,7 @@ TcpConnection.o: TcpConnection.cc.o
 
 # target to build an object file
 TcpConnection.cc.o:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/TcpConnection.cc.o
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/TcpConnection.cc.o
 .PHONY : TcpConnection.cc.o
 
 TcpConnection.i: TcpConnection.cc.i
@@ -491,7 +680,7 @@ TcpConnection.i: TcpConnection.cc.i
 
 # target to preprocess a source file
 TcpConnection.cc.i:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/TcpConnection.cc.i
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/TcpConnection.cc.i
 .PHONY : TcpConnection.cc.i
 
 TcpConnection.s: TcpConnection.cc.s
@@ -500,7 +689,7 @@ TcpConnection.s: TcpConnection.cc.s
 
 # target to generate assembly for a file
 TcpConnection.cc.s:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/TcpConnection.cc.s
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/TcpConnection.cc.s
 .PHONY : TcpConnection.cc.s
 
 TcpServer.o: TcpServer.cc.o
@@ -509,7 +698,7 @@ TcpServer.o: TcpServer.cc.o
 
 # target to build an object file
 TcpServer.cc.o:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/TcpServer.cc.o
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/TcpServer.cc.o
 .PHONY : TcpServer.cc.o
 
 TcpServer.i: TcpServer.cc.i
@@ -518,7 +707,7 @@ TcpServer.i: TcpServer.cc.i
 
 # target to preprocess a source file
 TcpServer.cc.i:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/TcpServer.cc.i
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/TcpServer.cc.i
 .PHONY : TcpServer.cc.i
 
 TcpServer.s: TcpServer.cc.s
@@ -527,7 +716,7 @@ TcpServer.s: TcpServer.cc.s
 
 # target to generate assembly for a file
 TcpServer.cc.s:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/TcpServer.cc.s
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/TcpServer.cc.s
 .PHONY : TcpServer.cc.s
 
 Thread.o: Thread.cc.o
@@ -536,7 +725,7 @@ Thread.o: Thread.cc.o
 
 # target to build an object file
 Thread.cc.o:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Thread.cc.o
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Thread.cc.o
 .PHONY : Thread.cc.o
 
 Thread.i: Thread.cc.i
@@ -545,7 +734,7 @@ Thread.i: Thread.cc.i
 
 # target to preprocess a source file
 Thread.cc.i:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Thread.cc.i
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Thread.cc.i
 .PHONY : Thread.cc.i
 
 Thread.s: Thread.cc.s
@@ -554,8 +743,35 @@ Thread.s: Thread.cc.s
 
 # target to generate assembly for a file
 Thread.cc.s:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Thread.cc.s
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Thread.cc.s
 .PHONY : Thread.cc.s
+
+TimeZone.o: TimeZone.cc.o
+
+.PHONY : TimeZone.o
+
+# target to build an object file
+TimeZone.cc.o:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/TimeZone.cc.o
+.PHONY : TimeZone.cc.o
+
+TimeZone.i: TimeZone.cc.i
+
+.PHONY : TimeZone.i
+
+# target to preprocess a source file
+TimeZone.cc.i:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/TimeZone.cc.i
+.PHONY : TimeZone.cc.i
+
+TimeZone.s: TimeZone.cc.s
+
+.PHONY : TimeZone.s
+
+# target to generate assembly for a file
+TimeZone.cc.s:
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/TimeZone.cc.s
+.PHONY : TimeZone.cc.s
 
 Timestamp.o: Timestamp.cc.o
 
@@ -563,7 +779,7 @@ Timestamp.o: Timestamp.cc.o
 
 # target to build an object file
 Timestamp.cc.o:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Timestamp.cc.o
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Timestamp.cc.o
 .PHONY : Timestamp.cc.o
 
 Timestamp.i: Timestamp.cc.i
@@ -572,7 +788,7 @@ Timestamp.i: Timestamp.cc.i
 
 # target to preprocess a source file
 Timestamp.cc.i:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Timestamp.cc.i
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Timestamp.cc.i
 .PHONY : Timestamp.cc.i
 
 Timestamp.s: Timestamp.cc.s
@@ -581,7 +797,7 @@ Timestamp.s: Timestamp.cc.s
 
 # target to generate assembly for a file
 Timestamp.cc.s:
-	cd /home/mzy/Code/mymoduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Timestamp.cc.s
+	cd /home/mzy/Code/mymuduo/build && $(MAKE) -f src/CMakeFiles/mymuduo.dir/build.make src/CMakeFiles/mymuduo.dir/Timestamp.cc.s
 .PHONY : Timestamp.cc.s
 
 # Help Target
@@ -596,6 +812,9 @@ help:
 	@echo "... Acceptor.o"
 	@echo "... Acceptor.i"
 	@echo "... Acceptor.s"
+	@echo "... AsyncLogging.o"
+	@echo "... AsyncLogging.i"
+	@echo "... AsyncLogging.s"
 	@echo "... Buffer.o"
 	@echo "... Buffer.i"
 	@echo "... Buffer.s"
@@ -605,6 +824,9 @@ help:
 	@echo "... CurrentThread.o"
 	@echo "... CurrentThread.i"
 	@echo "... CurrentThread.s"
+	@echo "... Date.o"
+	@echo "... Date.i"
+	@echo "... Date.s"
 	@echo "... DefaultPoller.o"
 	@echo "... DefaultPoller.i"
 	@echo "... DefaultPoller.s"
@@ -620,12 +842,27 @@ help:
 	@echo "... EventLoopThreadPool.o"
 	@echo "... EventLoopThreadPool.i"
 	@echo "... EventLoopThreadPool.s"
+	@echo "... FileUtils.o"
+	@echo "... FileUtils.i"
+	@echo "... FileUtils.s"
 	@echo "... InetAddress.o"
 	@echo "... InetAddress.i"
 	@echo "... InetAddress.s"
+	@echo "... LogFile.o"
+	@echo "... LogFile.i"
+	@echo "... LogFile.s"
+	@echo "... LogStream.o"
+	@echo "... LogStream.i"
+	@echo "... LogStream.s"
 	@echo "... Logger.o"
 	@echo "... Logger.i"
 	@echo "... Logger.s"
+	@echo "... Logging.o"
+	@echo "... Logging.i"
+	@echo "... Logging.s"
+	@echo "... MuduoThread.o"
+	@echo "... MuduoThread.i"
+	@echo "... MuduoThread.s"
 	@echo "... Poller.o"
 	@echo "... Poller.i"
 	@echo "... Poller.s"
@@ -641,6 +878,9 @@ help:
 	@echo "... Thread.o"
 	@echo "... Thread.i"
 	@echo "... Thread.s"
+	@echo "... TimeZone.o"
+	@echo "... TimeZone.i"
+	@echo "... TimeZone.s"
 	@echo "... Timestamp.o"
 	@echo "... Timestamp.i"
 	@echo "... Timestamp.s"
@@ -655,6 +895,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/mzy/Code/mymoduo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mzy/Code/mymuduo/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

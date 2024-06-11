@@ -50,7 +50,17 @@
         "condition_variable": "cpp",
         "ratio": "cpp",
         "mutex": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "bitset": "cpp",
+        "complex": "cpp",
+        "list": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "cinttypes": "cpp",
+        "typeindex": "cpp",
+        "variant": "cpp",
+        "codecvt": "cpp",
+        "iomanip": "cpp"
     },
     "Codegeex.GenerationPreference": "line by line",
     "Codegeex.SidebarUI.LanguagePreference": "中文",

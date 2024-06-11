@@ -1,4 +1,4 @@
-# Install script for directory: /home/mzy/Code/mymoduo/src
+# Install script for directory: /home/mzy/Code/mymuduo/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
