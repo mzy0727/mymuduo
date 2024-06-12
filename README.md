@@ -1,4 +1,12 @@
 # `Muduo`梳理
+## 组件
+`Channel`负责封装文件描述符和其感兴趣的事件，里面还保存了事件发生时的回调函数
+`Poller`负责I/O复用的抽象，其内部调用`epoll_wait`获取活跃的 `Channel`
+`EventLoop`相当于` Channel` 和 `Poller `之间的桥梁，`Channel `和 `Poller `之间并不之间沟通，而是借助着` EventLoop `这个类。
+
+`TcpConnection`必须有`output buffer`：使程序在write()操作上不会产生阻塞，当write()操作后，操作系统一次性没有接受完时，网络库把剩余数据则放入outputBuffer中，然后注册POLLOUT事件，一旦socket变得可写，则立刻调用write()进行写入数据。——应用层buffer到操作系统buffer
+
+`TcpConnection`必须有`input buffer`：当发送方send数据后，接收方收到数据不一定是整个的数据，网络库在处理socket可读事件的时候，必须一次性把socket里的数据读完，否则会反复触发POLLIN事件，造成busy-loop。所以网路库为了应对数据不完整的情况，收到的数据先放到inputBuffer里。——操作系统buffer到应用层buffer。
 
 ## 使用`Muduo`搭建简单的服务器
 
