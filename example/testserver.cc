@@ -1,6 +1,6 @@
 #include <mymuduo/TcpServer.h>
 #include <mymuduo/Logger.h>
-
+#include <mymuduo/Logging.h>
 #include <string>
 #include <functional>
 
@@ -24,7 +24,7 @@ public:
         );
 
         // 设置合适的loop线程数量 loopthread
-        server_.setThreadNum(3);
+        server_.setThreadNum(12);
     }
     void start()
     {
@@ -62,7 +62,8 @@ int main()
 {
     EventLoop loop;
     InetAddress addr(8000);
-    EchoServer server(&loop, addr, "EchoServer-01"); // Acceptor non-blocking listenfd  create bind 
+    EchoServer server(&loop, addr, "EchoServer-01"); // Acceptor non-blocking listenfd  create bind
+    
     server.start(); // listen  loopthread  listenfd => acceptChannel => mainLoop =>
     loop.loop(); // 启动mainLoop的底层Poller
 
